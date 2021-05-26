@@ -1,0 +1,2 @@
+.
+-DCATKIN_DEVEL_PREFIX=/home/janak/relocalization/re-localisation/devel -DCMAKE_INSTALL_PREFIX=/home/janak/relocalization/re-localisation/install -G Unix Makefiles
