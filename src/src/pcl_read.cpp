@@ -11,12 +11,12 @@
     
 
 class pcl_reader
-{   
+{    
 public:
     pcl_reader(){
     ros::Publisher pcl_pub = nh.advertise<sensor_msgs::PointCloud2> ("pcl_output", 1);
     ros::Publisher pcl_pub_2 = nh.advertise<sensor_msgs::PointCloud2> ("pcl_output2", 1);
-    ros::Subscriber pcl_sub = nh.subscribe<sensor_msgs::PointCloud2>  ("pcl_publish_output", 1, &pcl_reader::cloud_CB, this);
+    ros::Subscriber pcl_sub = nh.subscribe("pcl_publish_output", 1, &pcl_reader::cloud_CB, this);
     
     }
 

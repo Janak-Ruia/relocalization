@@ -18,7 +18,7 @@ main(int argc, char **argv)
     pcl::io::loadPCDFile ("/home/janak/pcd_new_kitti/1317379226.699959039.pcd", cloud);
 
     pcl::toROSMsg(cloud, publish_output);
-    output.header.frame_id = "/camera_init"; 
+    publish_output.header.frame_id = "/camera_init"; 
 
     ros::Rate loop_rate(1);
     while (ros::ok())
