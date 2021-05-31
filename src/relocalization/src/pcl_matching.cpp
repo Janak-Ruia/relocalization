@@ -15,7 +15,7 @@ class cloudHandler
 public:
     cloudHandler()
     {
-        pcl_sub_targ = nh.subscribe("pcl_downsampled_targ", 10, &cloudHandler::cloudCB_targ, this);
+        pcl_sub_targ = nh.subscribe("pcl_target", 10, &cloudHandler::cloudCB_targ, this);
         pcl_sub_scan = nh.subscribe("segmented_cloud_pure", 10, &cloudHandler::cloudCB_scan, this);
         pcl_pub_scan = nh.advertise<sensor_msgs::PointCloud2>("pcl_scan_altered", 1);
         pcl_pub_aligned = nh.advertise<sensor_msgs::PointCloud2>("pcl_aligned", 1);

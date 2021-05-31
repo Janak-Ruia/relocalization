@@ -1,10 +1,10 @@
 <launch>
  
     <!--- Run Rviz-->
-    <node pkg="rviz" type="rviz" name="rviz" args="/home/janak/Relocalisation_pranav/relocalisation/src/launch/test.rviz" />
+    <node pkg="rviz" type="rviz" name="rviz" args="/home/pranavkdas/janak_ws/src/relocalization/src/relocalization/launch/test.rviz" />
 
     <!--- TF -->
-    <node pkg="tf" type="static_transform_publisher" name="camera_init_to_map"  args="0 0 0 1.570795   0        1.570795 /map /camera_init 10" />
+    <node pkg="tf" type="static_transform_publisher" name="camera_init_to_map"  args="0 0 0 1.570795   0  1.570795 /map /camera_init 10" />
 
     <!--- Relocalisation -->    
     <node pkg="relocalisation" type="pcl_publish"  name="pcl_publish"    output="screen"/>

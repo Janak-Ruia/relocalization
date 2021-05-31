@@ -4,6 +4,8 @@ project(relocalisation)
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 -O3")
+
 find_package(catkin REQUIRED COMPONENTS
   pcl_ros
   roscpp
@@ -11,20 +13,45 @@ find_package(catkin REQUIRED COMPONENTS
   sensor_msgs
   std_msgs
   cloud_msgs
+  tf
+  cv_bridge
+  image_transport
+
+  pcl_conversions
+
+  geometry_msgs
+  nav_msgs
+  cloud_msgs
+
 )
 
 ## System dependencies are found with CMake's conventions
 # find_package(Boost REQUIRED COMPONENTS system)
 find_package(PCL REQUIRED)
+find_package(GTSAM REQUIRED QUIET)
+find_package(OpenCV REQUIRED QUIET)
 
 ## Add include directories
+catkin_package(
+  INCLUDE_DIRS include
+  CATKIN_DEPENDS cloud_msgs
+  DEPENDS PCL
+)
+
 include_directories(include
-	  ${PCL_INCLUDE_DIRS}
+  include
+  ${catkin_INCLUDE_DIRS}
+  ${PCL_INCLUDE_DIRS}
+  ${OpenCV_INCLUDE_DIRS}
+  ${GTSAM_INCLUDE_DIR}
 )
 
 ## Add link directories
 link_directories(
+  include
+  ${OpenCV_LIBRARY_DIRS}
   ${PCL_LIBRARY_DIRS}
+  ${GTSAM_LIBRARY_DIRS}
 )
 
 
@@ -128,6 +155,8 @@ add_executable(pcl_matching src/pcl_matching.cpp)
 add_executable(segmentation src/segmentation.cpp)
 add_executable(write src/write.cpp)
 
+
+
  
  ## Add cmake target dependencies of the executable/library
 ## as an example, message headers may need to be generated before nodes
@@ -140,9 +169,10 @@ target_link_libraries(write ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 target_link_libraries(pcl_filter ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 target_link_libraries(pcl_downsampling ${catkin_LIBRARIES} ${PCL_LIBRARIES})
 target_link_libraries(pcl_matching ${catkin_LIBRARIES} ${PCL_LIBRARIES})
-target_link_libraries(segmentation ${catkin_LIBRARIES} ${PCL_LIBRARIES})
+target_link_libraries(segmentation ${catkin_LIBRARIES} ${PCL_LIBRARIES} ${OpenCV_LIBRARIES})
 
-add_dependencies(segmentation ${catkin_EXPORTED_TARGETS})
+
+add_dependencies(segmentation ${catkin_EXPORTED_TARGETS} cloud_msgs_gencpp)
 #############
 ## Install ##
 #############

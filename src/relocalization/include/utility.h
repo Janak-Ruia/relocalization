@@ -51,6 +51,7 @@ using namespace std;
 
 typedef pcl::PointXYZI  PointType;
 
+// extern const string pointCloudTopic = "/pcl_scan";
 extern const string pointCloudTopic = "/kitti/velo/pointcloud";
 extern const string imuTopic = "/imu/data";
 

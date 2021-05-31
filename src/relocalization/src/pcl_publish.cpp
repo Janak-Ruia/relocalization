@@ -18,8 +18,8 @@ main(int argc, char **argv)
     pcl::PointCloud<pcl::PointXYZ> MapCloud;
     pcl::PointCloud<pcl::PointXYZ> ScanCloud;
 
-    pcl::io::loadPCDFile ("/home/janak/Relocalisation_pranav/relocalisation/src/data/kitti2.pcd", MapCloud);
-    pcl::io::loadPCDFile ("/home/janak/Relocalisation_pranav/relocalisation/src/data/area.pcd", ScanCloud);
+    pcl::io::loadPCDFile ("/home/pranavkdas/janak_ws/src/relocalization/src/relocalization/data/area.pcd", ScanCloud);
+    pcl::io::loadPCDFile ("/home/pranavkdas/janak_ws/src/relocalization/src/relocalization/data/kitti2.pcd", MapCloud);
 
     pcl::toROSMsg(MapCloud, outputMap);
     pcl::toROSMsg(ScanCloud, outputScan);

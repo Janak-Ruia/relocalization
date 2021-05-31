@@ -80,7 +80,7 @@ public:
     ImageProjection():
         nh("~"){
 
-        subLaserCloud = nh.subscribe<sensor_msgs::PointCloud2>("/pcl_scan", 1, &ImageProjection::cloudHandler, this);
+        subLaserCloud = nh.subscribe<sensor_msgs::PointCloud2>(pointCloudTopic, 1, &ImageProjection::cloudHandler, this);
 
         pubFullCloud = nh.advertise<sensor_msgs::PointCloud2> ("/full_cloud_projected", 1);
         pubFullInfoCloud = nh.advertise<sensor_msgs::PointCloud2> ("/full_cloud_info", 1);
@@ -449,39 +449,39 @@ public:
 
         pcl::toROSMsg(*outlierCloud, laserCloudTemp);
         laserCloudTemp.header.stamp = cloudHeader.stamp;
-        laserCloudTemp.header.frame_id = "base_link";
+        laserCloudTemp.header.frame_id = "/camera_init";
         pubOutlierCloud.publish(laserCloudTemp);
         // segmented cloud with ground
         pcl::toROSMsg(*segmentedCloud, laserCloudTemp);
         laserCloudTemp.header.stamp = cloudHeader.stamp;
-        laserCloudTemp.header.frame_id = "base_link";
+        laserCloudTemp.header.frame_id = "/camera_init";
         pubSegmentedCloud.publish(laserCloudTemp);
         // projected full cloud
         if (pubFullCloud.getNumSubscribers() != 0){
             pcl::toROSMsg(*fullCloud, laserCloudTemp);
             laserCloudTemp.header.stamp = cloudHeader.stamp;
-            laserCloudTemp.header.frame_id = "base_link";
+            laserCloudTemp.header.frame_id = "/camera_init";
             pubFullCloud.publish(laserCloudTemp);
         }
         // original dense ground cloud
         if (pubGroundCloud.getNumSubscribers() != 0){
             pcl::toROSMsg(*groundCloud, laserCloudTemp);
             laserCloudTemp.header.stamp = cloudHeader.stamp;
-            laserCloudTemp.header.frame_id = "base_link";
+            laserCloudTemp.header.frame_id = "/camera_init";
             pubGroundCloud.publish(laserCloudTemp);
         }
         // segmented cloud without ground
         if (pubSegmentedCloudPure.getNumSubscribers() != 0){
             pcl::toROSMsg(*segmentedCloudPure, laserCloudTemp);
             laserCloudTemp.header.stamp = cloudHeader.stamp;
-            laserCloudTemp.header.frame_id = "base_link";
+            laserCloudTemp.header.frame_id = "/base_link";
             pubSegmentedCloudPure.publish(laserCloudTemp);
         }
         // projected full cloud info
         if (pubFullInfoCloud.getNumSubscribers() != 0){
             pcl::toROSMsg(*fullInfoCloud, laserCloudTemp);
             laserCloudTemp.header.stamp = cloudHeader.stamp;
-            laserCloudTemp.header.frame_id = "base_link";
+            laserCloudTemp.header.frame_id = "/base_link";
             pubFullInfoCloud.publish(laserCloudTemp);
         }
     }
