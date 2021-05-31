@@ -1,0 +1,19 @@
+<launch>
+ 
+    <!--- Run Rviz-->
+    <node pkg="rviz" type="rviz" name="rviz" args="/home/janak/Relocalisation_pranav/relocalisation/src/launch/test.rviz" />
+
+    <!--- TF -->
+    <node pkg="tf" type="static_transform_publisher" name="camera_init_to_map"  args="0 0 0 1.570795   0        1.570795 /map /camera_init 10" />
+
+    <!--- Relocalisation -->    
+    <node pkg="relocalisation" type="pcl_publish"  name="pcl_publish"    output="screen"/>
+    <node pkg="relocalisation" type="pcl_partition"  name="pcl_partition"    output="screen"/>
+   <!-- <node pkg="relocalisation" type="pcl_filter"  name="pcl_filter"    output="screen"/>
+    <node pkg="relocalisation" type="pcl_downsampling"  name="pcl_downsampling"    output="screen"/> -->
+    <node pkg="relocalisation" type="segmentation"  name="segmentation"    output="screen"/>    
+    <node pkg="relocalisation" type="pcl_matching"  name="pcl_matching"    output="screen"/>
+
+    <!--- <node pkg="Relocalisation" type="write"  name="write"    output="screen"/>  -->  
+
+</launch>

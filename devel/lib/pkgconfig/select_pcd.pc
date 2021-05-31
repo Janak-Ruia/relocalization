@@ -1,8 +1,0 @@
-prefix=/home/janak/relocalization/re-localisation/devel
-
-Name: select_pcd
-Description: Description of select_pcd
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

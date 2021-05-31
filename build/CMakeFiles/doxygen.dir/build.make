@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/janak/relocalization/re-localisation/src
+CMAKE_SOURCE_DIR = /home/janak/Relocalisation_pranav/relocalisation/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/janak/relocalization/re-localisation/build
+CMAKE_BINARY_DIR = /home/janak/Relocalisation_pranav/relocalisation/build
 
 # Utility rule file for doxygen.
 
@@ -67,6 +67,6 @@ CMakeFiles/doxygen.dir/clean:
 .PHONY : CMakeFiles/doxygen.dir/clean
 
 CMakeFiles/doxygen.dir/depend:
-	cd /home/janak/relocalization/re-localisation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/janak/relocalization/re-localisation/src /home/janak/relocalization/re-localisation/src /home/janak/relocalization/re-localisation/build /home/janak/relocalization/re-localisation/build /home/janak/relocalization/re-localisation/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/janak/Relocalisation_pranav/relocalisation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/janak/Relocalisation_pranav/relocalisation/src /home/janak/Relocalisation_pranav/relocalisation/src /home/janak/Relocalisation_pranav/relocalisation/build /home/janak/Relocalisation_pranav/relocalisation/build /home/janak/Relocalisation_pranav/relocalisation/build/CMakeFiles/doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doxygen.dir/depend
 
