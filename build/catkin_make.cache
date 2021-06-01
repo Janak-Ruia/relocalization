@@ -1,2 +1,2 @@
 cloud_msgs:relocalization
--DCATKIN_DEVEL_PREFIX=/home/janak/Relocalisation_pranav/relocalisation/devel -DCMAKE_INSTALL_PREFIX=/home/janak/Relocalisation_pranav/relocalisation/install -G Unix Makefiles
+-DCATKIN_DEVEL_PREFIX=/home/janak/relocalization/devel -DCMAKE_INSTALL_PREFIX=/home/janak/relocalization/install -G Unix Makefiles

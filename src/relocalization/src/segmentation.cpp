@@ -474,14 +474,14 @@ public:
         if (pubSegmentedCloudPure.getNumSubscribers() != 0){
             pcl::toROSMsg(*segmentedCloudPure, laserCloudTemp);
             laserCloudTemp.header.stamp = cloudHeader.stamp;
-            laserCloudTemp.header.frame_id = "/base_link";
+            laserCloudTemp.header.frame_id = "/camera_init";
             pubSegmentedCloudPure.publish(laserCloudTemp);
         }
         // projected full cloud info
         if (pubFullInfoCloud.getNumSubscribers() != 0){
             pcl::toROSMsg(*fullInfoCloud, laserCloudTemp);
             laserCloudTemp.header.stamp = cloudHeader.stamp;
-            laserCloudTemp.header.frame_id = "/base_link";
+            laserCloudTemp.header.frame_id = "/camera_init";
             pubFullInfoCloud.publish(laserCloudTemp);
         }
     }

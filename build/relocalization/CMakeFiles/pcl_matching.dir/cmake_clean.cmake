@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pcl_matching.dir/src/pcl_matching.cpp.o"
-  "/home/janak/Relocalisation_pranav/relocalisation/devel/lib/relocalisation/pcl_matching.pdb"
-  "/home/janak/Relocalisation_pranav/relocalisation/devel/lib/relocalisation/pcl_matching"
+  "/home/janak/relocalization/devel/lib/relocalisation/pcl_matching.pdb"
+  "/home/janak/relocalization/devel/lib/relocalisation/pcl_matching"
 )
 
 # Per-language clean rules from dependency scanning.

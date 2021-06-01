@@ -1,7 +1,7 @@
 <launch>
  
     <!--- Run Rviz-->
-    <node pkg="rviz" type="rviz" name="rviz" args="/home/pranavkdas/janak_ws/src/relocalization/src/relocalization/launch/test.rviz" />
+    <node pkg="rviz" type="rviz" name="rviz" args="/home/janak/relocalization/src/relocalization/launch/test.rviz" />
 
     <!--- TF -->
     <node pkg="tf" type="static_transform_publisher" name="camera_init_to_map"  args="0 0 0 1.570795   0  1.570795 /map /camera_init 10" />

@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/pcl_partition.dir/src/pcl_partition.cpp.o"
-  "/home/janak/Relocalisation_pranav/relocalisation/devel/lib/relocalisation/pcl_partition.pdb"
-  "/home/janak/Relocalisation_pranav/relocalisation/devel/lib/relocalisation/pcl_partition"
+  "/home/janak/relocalization/devel/lib/relocalisation/pcl_partition.pdb"
+  "/home/janak/relocalization/devel/lib/relocalisation/pcl_partition"
 )
 
 # Per-language clean rules from dependency scanning.

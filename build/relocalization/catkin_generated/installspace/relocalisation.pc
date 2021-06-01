@@ -1,4 +1,4 @@
-prefix=/home/janak/Relocalisation_pranav/relocalisation/install
+prefix=/home/janak/relocalization/install
 
 Name: relocalisation
 Description: Description of relocalisation

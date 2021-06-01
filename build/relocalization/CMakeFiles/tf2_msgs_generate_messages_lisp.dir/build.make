@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/janak/Relocalisation_pranav/relocalisation/src
+CMAKE_SOURCE_DIR = /home/janak/relocalization/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/janak/Relocalisation_pranav/relocalisation/build
+CMAKE_BINARY_DIR = /home/janak/relocalization/build
 
 # Utility rule file for tf2_msgs_generate_messages_lisp.
 
@@ -63,10 +63,10 @@ relocalization/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build: tf2_msgs_ge
 .PHONY : relocalization/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/build
 
 relocalization/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean:
-	cd /home/janak/Relocalisation_pranav/relocalisation/build/relocalization && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_lisp.dir/cmake_clean.cmake
+	cd /home/janak/relocalization/build/relocalization && $(CMAKE_COMMAND) -P CMakeFiles/tf2_msgs_generate_messages_lisp.dir/cmake_clean.cmake
 .PHONY : relocalization/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/clean
 
 relocalization/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/depend:
-	cd /home/janak/Relocalisation_pranav/relocalisation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/janak/Relocalisation_pranav/relocalisation/src /home/janak/Relocalisation_pranav/relocalisation/src/relocalization /home/janak/Relocalisation_pranav/relocalisation/build /home/janak/Relocalisation_pranav/relocalisation/build/relocalization /home/janak/Relocalisation_pranav/relocalisation/build/relocalization/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/janak/relocalization/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/janak/relocalization/src /home/janak/relocalization/src/relocalization /home/janak/relocalization/build /home/janak/relocalization/build/relocalization /home/janak/relocalization/build/relocalization/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : relocalization/CMakeFiles/tf2_msgs_generate_messages_lisp.dir/depend
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/janak/Relocalisation_pranav/relocalisation/src/relocalization
+# Install script for directory: /home/janak/relocalization/src/relocalization
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/janak/Relocalisation_pranav/relocalisation/install")
+  set(CMAKE_INSTALL_PREFIX "/home/janak/relocalization/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,32 +38,47 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/janak/Relocalisation_pranav/relocalisation/build/relocalization/catkin_generated/installspace/relocalisation.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/janak/relocalization/build/relocalization/catkin_generated/installspace/relocalisation.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/relocalisation/cmake" TYPE FILE FILES
-    "/home/janak/Relocalisation_pranav/relocalisation/build/relocalization/catkin_generated/installspace/relocalisationConfig.cmake"
-    "/home/janak/Relocalisation_pranav/relocalisation/build/relocalization/catkin_generated/installspace/relocalisationConfig-version.cmake"
+    "/home/janak/relocalization/build/relocalization/catkin_generated/installspace/relocalisationConfig.cmake"
+    "/home/janak/relocalization/build/relocalization/catkin_generated/installspace/relocalisationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/relocalisation" TYPE FILE FILES "/home/janak/Relocalisation_pranav/relocalisation/src/relocalization/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/relocalisation" TYPE FILE FILES "/home/janak/relocalization/src/relocalization/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/janak/Relocalisation_pranav/relocalisation/build/relocalization/catkin_generated/installspace/relocalisation.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/janak/relocalization/build/relocalization/catkin_generated/installspace/relocalisation.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/relocalisation/cmake" TYPE FILE FILES
-    "/home/janak/Relocalisation_pranav/relocalisation/build/relocalization/catkin_generated/installspace/relocalisationConfig.cmake"
-    "/home/janak/Relocalisation_pranav/relocalisation/build/relocalization/catkin_generated/installspace/relocalisationConfig-version.cmake"
+    "/home/janak/relocalization/build/relocalization/catkin_generated/installspace/relocalisationConfig.cmake"
+    "/home/janak/relocalization/build/relocalization/catkin_generated/installspace/relocalisationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/relocalisation" TYPE FILE FILES "/home/janak/Relocalisation_pranav/relocalisation/src/relocalization/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/relocalisation" TYPE FILE FILES "/home/janak/relocalization/src/relocalization/package.xml")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/janak/relocalization/build/relocalization/catkin_generated/installspace/relocalisation.pc")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/relocalisation/cmake" TYPE FILE FILES
+    "/home/janak/relocalization/build/relocalization/catkin_generated/installspace/relocalisationConfig.cmake"
+    "/home/janak/relocalization/build/relocalization/catkin_generated/installspace/relocalisationConfig-version.cmake"
+    )
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/relocalisation" TYPE FILE FILES "/home/janak/relocalization/src/relocalization/package.xml")
 endif()
 

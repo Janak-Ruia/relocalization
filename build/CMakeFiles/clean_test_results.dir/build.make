@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/janak/Relocalisation_pranav/relocalisation/src
+CMAKE_SOURCE_DIR = /home/janak/relocalization/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/janak/Relocalisation_pranav/relocalisation/build
+CMAKE_BINARY_DIR = /home/janak/relocalization/build
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/janak/Relocalisation_pranav/relocalisation/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/janak/Relocalisation_pranav/relocalisation/build/test_results
+	/usr/bin/python2 /opt/ros/melodic/share/catkin/cmake/test/remove_test_results.py /home/janak/relocalization/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/janak/Relocalisation_pranav/relocalisation/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/janak/Relocalisation_pranav/relocalisation/src /home/janak/Relocalisation_pranav/relocalisation/src /home/janak/Relocalisation_pranav/relocalisation/build /home/janak/Relocalisation_pranav/relocalisation/build /home/janak/Relocalisation_pranav/relocalisation/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/janak/relocalization/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/janak/relocalization/src /home/janak/relocalization/src /home/janak/relocalization/build /home/janak/relocalization/build /home/janak/relocalization/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 
